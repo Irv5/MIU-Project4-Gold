@@ -1,0 +1,9 @@
+/* custom styles */
+
+label.error{display:top; margin:10px 0; color:#cc0000;}
+
+#rberrorslink{display:none;}
+
+#oldSchoolPage .ui-grid-b div{text-align:center;}
+
+#oldSchoolPage .ui-grid-b .ui-bar{padding:10px 10px;}
