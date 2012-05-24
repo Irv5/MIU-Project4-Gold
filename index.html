@@ -17,6 +17,22 @@
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<style type="text/css">
+	body {
+		background: url(../images/Background.png;)
+		background-size:100% 100%;
+	}
+	.ui-page 
+	{
+    background-color:#c4d7e9;
+    background-image: url("images/Background.png");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	}
+	
+	
+	</style>
 	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -29,13 +45,11 @@
 	<div data-role="page" id="homePage">
 	
 		
-	<div data-role="header" data-position="fixed">
-		<h1>Music Catalog</h1>
-	</div>
+	
 	
 			
 	<div>
-		<a href="additem.html" data-ajax="false"><img src="images/cta.png" id="cta" /></a> 
+		<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
 	</div>
 	   
 			
@@ -57,15 +71,20 @@
 	</div>
 	
 		<div data-role="footer" data-position="fixed">
-			<h4><a href="https://github.com/Irv5/MIU-Project3-Gold.git">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://irv5.github.com/MIU-Project3-Gold/index.html">GitHub Site</a></h4>
+			<h4><a href="https://github.com/Irv5/MIU-Project4-Gold.git">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://irv5.github.com/MIU-Project4-Gold/index.html">GitHub Site</a></h4>
 			
 		</div>
 
 	</div>
 	
 
-		<!-- Fun Music Information -->
+			<!-- Fun Music Information -->
 		<div data-role="page" id="funPage" data-add-back-btn="true">
+		
+			<div>
+				<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
+			</div><br />
+
 
 			<div data-role="header" data-position="fixed">
 				<h1>Fun Music</h1>
@@ -190,61 +209,66 @@
 		<!-- Other Music Information -->
 		<div data-role="page" id="otherPage" data-add-back-btn="true">
 
-			<div data-role="header" data-position="fixed">
-				<h1>Other Music</h1>
-			</div>
-
-			<div data-role="content">
-				<p>Find Other Music Here</p>
-			</div>
-
+			<div>
+				<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
+			</div><br />
+		
+			<div data-role="navbar">
+   				<ul>
+        			<li><a href="#">Jazz</a></li>
+        			<li><a href="#">Relaxed</a></li>
+        			<li><a href="#">Hip Hop</a></li>
+    			</ul>
+    			
+			</div><!-- /navbar -->
+						
+				
 			<div data-role="footer" data-position="fixed">
-				<h4>Footer</h4>
+				<h4>Other Music</h4>
 			</div>
-			
-		</div>
+		</div>	
 
 		<!-- News Information -->
 		<div data-role="page" id="newsPage" data-add-back-btn="true">
 			
-			<li data-role="list-divider"></li>
-			<ul data-role="listview" data-filter="true" data-inset="true" data-theme="b">
+			<div>
+				<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
+			</div><br />
 			
-
-			<div data-role="header" data-position="fixed">
-				<h1>News</h1>
-			</div
-
-			<div data-role="content">
-				<div>
+			<li data-role="list-divider"></li>
+			<ul data-role="listview" data-filter="true" data-inset="true" data-theme="a">
+			
+			
+			<div data-role="content" >
+				<div data-role="content" data-theme="a">
 					<ul>
 					<li><h5><a>Three Chinese banks expanding in U.S.</a></h5></li>
 					<ul><h6>CNN, Date 04/9/12, Added 2:10 PM<h6></ul>
 					</ul>
 				</div>
 				 
-				<div>
+				<div data-role="content" data-theme="b">
 					<ul>
 					<li><h5><a>Obama supports same-sex marriage</a></h5></li>
 					<ul><h6>CNN, Date 04/9/12, Added 1:15 PM<h6></ul>
 					</ul>
 				</div>
 
-				<div>
+				<div data-role="content" data-theme="a">
 					<ul>
 					<li><h5><a>Murder, Kidnapping charges against Adam Mayes</a></h5></li>
 					<ul><h6>CNN, Date 04/9/12, Added 12:05 PM<h6></ul>
 					</ul>
 				</div>
 				
-				<div>
+				<div data-role="content" data-theme="b">
 					<ul>
 					<li><h5><a>'Pocket calls' burden 911 responders in NYC</a></h5></li>
 					<ul><h6>CNN, Date 04/9/12, Added 11:35 AM<h6></ul>
 					</ul>
 				</div>
 				
-				<div>
+				<div data-role="content" data-theme="a">
 					<ul>
 					<li><h5><a>A bit of good news for U.S. mothers</a></h5></li>
 					<ul><h6>CNN, Date 04/9/12, Added 09:45 AM<h6></ul>
@@ -262,7 +286,7 @@
 						<li><a href="#newsPage" data-icon="star">News</a></li>
 						<li><a href="#favoritesPage" data-icon="gear" class="ui-btn-active">Favorites Music</a></li>
 						<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
-						<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>
+						<li><a href="http://irv5.github.com/MIU-Project4-Bronze/index.html" data-icon="search">GitHub Site</a></li>
 					</ul>
 				</div>
 			</div>
@@ -274,26 +298,26 @@
 	<!-- Relaxed Music Information -->
 	<div data-role="page" id="relaxedPage" data-add-back-btn="true">
 
-		<div data-role="header" data-position="fixed">
-			<h1>Favorite Music</h1>
-		</div>
+		<div>
+			<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
+		</div><br />
 
 		<div data-role="content">
 			<p>Find Your Relaxed Music Here</p>
 		
 		<div data-role="collapsible-set">
 			
-			<div data-role="collapsible" data-collapsed="false" data-theme="b">
+			<div data-role="collapsible" data-collapsed="false" data-theme="a">
 				<h3>Cinderfella</h3>
 				<p>Artist: Dana Dane</p>
 			</div>
 			
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			<div data-role="collapsible" data-collapsed="true" data-theme="a">
 				<h3>Word Up</h3>
 				<p>Artist: Cameo</p>
 			</div>
 			
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			<div data-role="collapsible" data-collapsed="true" data-theme="a">
 				<h3>Good Times</h3>
 				<p>Artist: Funk Band</p>
 			</div>
@@ -308,7 +332,7 @@
 					<li><a href="#newsPage" data-icon="star">Fun Music</a></li>
 					<li><a href="#favoritesPage" data-icon="gear">Favorites Music</a></li>
 					<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
-					<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>
+					<li><a href="http://irv5.github.com/MIU-Project4-Bronze/index.html" data-icon="search">GitHub Site</a></li>
 				</ul>
 			</div>
 		</div>
@@ -320,26 +344,26 @@
 	<!-- Favorite Music Information Accordion Style-->
 	<div data-role="page" id="favoritesPage" data-add-back-btn="true">
 
-		<div data-role="header" data-position="fixed">
-			<h1>Favorite Music</h1>
-		</div>
+		<div>
+			<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
+		</div><br />
 
 		<div data-role="content">
 			<p>Find Your Favorite Music Here</p>
 		
 		<div data-role="collapsible-set">
 			
-			<div data-role="collapsible" data-collapsed="false" data-theme="b">
+			<div data-role="collapsible" data-collapsed="false" data-theme="a">
 				<h3>Cinderfella</h3>
 				<p>Artist: Dana Dane</p>
 			</div>
 			
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			<div data-role="collapsible" data-collapsed="true" data-theme="a">
 				<h3>Word Up</h3>
 				<p>Artist: Cameo</p>
 			</div>
 			
-			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+			<div data-role="collapsible" data-collapsed="true" data-theme="a">
 				<h3>Good Times</h3>
 				<p>Artist: Funk Band</p>
 			</div>
@@ -354,7 +378,7 @@
 					<li><a href="#newsPage" data-icon="star">News</a></li>
 					<li><a href="#favoritesPage" data-icon="gear" class="ui-btn-active">Favorites Music</a></li>
 					<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
-					<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>
+					<li><a href="http://irv5.github.com/MIU-Project4-Bronze/index.html" data-icon="search">GitHub Site</a></li>
 				</ul>
 			</div>
 		</div>
@@ -364,9 +388,9 @@
 	<!-- Old School Music Information Grids Layout-->
 	<div data-role="page" id="worldWidePage" data-add-back-btn="true">
 
-		<div data-role="header" data-position="fixed">
-			<h1>World Wide Music</h1>
-		</div>
+		<div>
+			<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
+		</div><br />
 
 		<div data-role="content">
 			<div class="ui-grid-a">
@@ -388,12 +412,12 @@
 			</div>
 		</div>
 				<div class="ui-grid-b">
-					<div class="ui-block-a"><div class="ui-bar ui-bar-b"><img src="images/USA.gif" id="USA" /><h5>USA Music</h5></div></div>
-					<div class="ui-block-b"><div class="ui-bar ui-bar-b"><img src="images/Brazil.gif" id="Brazil" /><h5>Brazil Music</h5></div></div>
-					<div class="ui-block-c"><div class="ui-bar ui-bar-b"><img src="images/Canada.gif" id="Canada" /><h5>Canada Music</h5></div></div>
-					<div class="ui-block-a"><div class="ui-bar ui-bar-b"><img src="images/Japan.gif" id="Japan" /></div></div>
-					<div class="ui-block-b"><div class="ui-bar ui-bar-b"><img src="images/Mexico.gif" id="Mexico" /></div></div>
-					<div class="ui-block-c"><div class="ui-bar ui-bar-b"><img src="images/China.gif" id="China" /></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/USA.gif" id="USA" /><h5>USA Music</h5></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Brazil.gif" id="Brazil" /><h5>Brazil Music</h5></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/Canada.gif" id="Canada" /><h5>Canada Music</h5></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/Japan.gif" id="Japan" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/Mexico.gif" id="Mexico" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/China.gif" id="China" /></div></div>
 				</div>	
 			</div>
 		
@@ -404,7 +428,7 @@
 					<li><a href="#newsPage" data-icon="star">News</a></li>
 					<li><a href="#favoritesPage" data-icon="gear" class="ui-btn-active">Favorites Music</a></li>
 					<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
-					<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>ß
+					<li><a href="http://irv5.github.com/MIU-Project4-Bronze/index.html" data-icon="search">GitHub Site</a></li>ß
 				</ul>
 			</div>
 		</div>
