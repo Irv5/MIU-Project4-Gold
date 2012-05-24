@@ -38,6 +38,19 @@
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<!--script src="js/libs/modernizr.custom.min.js"></script -->
 
+	
+	<script>
+        $(function() {
+    
+            $("#other-music").otherTabs();
+             
+        });
+    </script>
+
+
+
+
+
 </head>
 <body>
 	
@@ -207,21 +220,42 @@
 		
 		
 		<!-- Other Music Information -->
-		<div data-role="page" id="otherPage" data-add-back-btn="true">
-
+		<div id="otherPage">
+		
 			<div>
 				<a href="additem.html" data-ajax="false"><img src="images/cta2.png" id="cta2" /></a> 
 			</div><br />
+
+			<h2>Other Music Tabs</h2>
 		
-			<div data-role="navbar">
-   				<ul>
-        			<li><a href="#">Jazz</a></li>
-        			<li><a href="#">Relaxed</a></li>
-        			<li><a href="#">Hip Hop</a></li>
-    			</ul>
-    			
-			</div><!-- /navbar -->
-						
+		
+		
+        <div id="other-music">
+        			
+        	<ul class="nav">
+                <li class="nav-one"><a href="#jazz" class="current">Jazz</a></li>
+                <li class="nav-two"><a href="#r&b">R & B</a></li>
+                <li class="nav-three"><a href="#hip-hop">Hip-Hop</a></li>
+            </ul>
+        	
+        	<div class="list-wrap">
+        	
+        		<ul id="jazz">
+        			<li><a href="">Jazz Music</a></li>
+           		</ul>
+        		 
+        		 <ul id="r&b" class="hide">
+                    <li><a href="">R&B Music &amp; CSS</a></li>
+                 </ul>
+        		 
+        		 <ul id="hip-hop" class="hide">
+        		    <li><a href="hip-hop music">Hip Hop Music</a></li>
+        		 </ul>
+        		 
+        		         		 
+        	 </div> <!-- END -->
+         
+         </div> <!-- END Other Tabs -->						
 				
 			<div data-role="footer" data-position="fixed">
 				<h4>Other Music</h4>
@@ -444,6 +478,8 @@
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script src="gen_validatorv4.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/othertabs.jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/json.js"></script>
 
