@@ -1,0 +1,21 @@
+/* custom styles */
+
+
+
+label.error{display:top; margin:10px 0; color:yellow;}
+
+#rberrorslink{display:none;}
+
+#oldSchoolPage .ui-grid-b div{text-align:center;}
+
+#oldSchoolPage .ui-grid-b .ui-bar{padding:10px 10px;}
+
+#funPage{color:white;}
+
+#favoritesPage{color:white;}
+
+#newsPage{color:white;}
+
+#relaxedPage{color:white;}
+
+#otherPage{color:white;}
